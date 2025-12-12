@@ -78,6 +78,12 @@ public class Club
         return jugadores;
     }
 
+    @Override
+    public String toString()
+    {
+        return "Club [id=" + id + ", nombre=" + nombre + ", jugadores=" + totalJugadores() + "]";
+    }
+
     private static final long serialVersionUID = 1L;
     private String id;
     private String nombre;

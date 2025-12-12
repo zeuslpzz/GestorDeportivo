@@ -67,6 +67,12 @@ public class Jugador
             goles--;
     }
 
+    @Override
+    public String toString()
+    {
+        return "Jugador [id=" + id + ", nombre=" + nombre + " " + apellidos + ", goles=" + goles + "]";
+    }
+
     private static final long serialVersionUID = 1L;
     private String id;
     private String nombre;
