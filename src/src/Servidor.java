@@ -6,7 +6,7 @@ public class Servidor {
         try (ServerSocket serverSocket = new ServerSocket(5000)) {
             while (true) {
                 Socket cliente = serverSocket.accept();
-                new Thread(new ClienteHandler(cliente)).start();
+                new Thread(new ServerThread(cliente)).start();
             }
         } catch (Exception e) {
             e.printStackTrace();
